@@ -27,6 +27,8 @@ const sendEmail = (subject, text) => {
     text: text,
   };
 
+  //console.log(mailOptions);
+
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(`Error while sending email: ${error}`);
